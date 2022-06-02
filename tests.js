@@ -40,9 +40,6 @@ test('subtracts two numbers', (expect) => {
     //Expect
     expect.equal(actual, expected);
 });
-export function subtract(x, y) {
-    return x - y;
-}
 /* 
     Write a function that takes in two numbers
     and returns their difference (subtract)
@@ -51,6 +48,14 @@ export function subtract(x, y) {
 
     Uses: Math operator
 */
+test('minutes into seconds', (expect) => {
+    //Arrange
+    const expected = 600;
+    //Act
+    const actual = convertToSeconds(10);
+    //Expect
+    expect.equal(actual, expected);
+});
 
 /* 
     Write a function that takes in number of minutes
