@@ -85,7 +85,7 @@ test('get area of a triangle', (expect) => {
 
     Uses: Math operator(s)
 */
-test('sum greater or less than 100', (expect) => {
+/*test('sum greater or less than 100', (expect) => {
     //Arrange
     const trueNum1 = 25;
     const trueNum2 = 13;
@@ -113,10 +113,7 @@ test('sum greater or less than 100', (expect) => {
 
     Uses: Comparison operator(s), if/else control flow
 */
-test('even or odd', (expect) => {
-    //Arrange
-    const 
-})
+
 /* 
     Write a function that takes a number and
     and returns 'even' if number is even, otherwise 'odd'.

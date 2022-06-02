@@ -22,8 +22,8 @@ export function numberSum(a, b) {
 }
 export function oddEven(number) {
     if (number % 2 === 0) {
-        return 'even';
+        return ('even');
     } else {
-        return 'odd';
+        return ('odd');
     }
 }
