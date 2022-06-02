@@ -30,6 +30,19 @@ test('adds two numbers', (expect) => {
     expect.equal(actual, expected);
 });
 
+test('subtracts two numbers', (expect) => {
+    //Arrange
+    const x = 12;
+    const y = 8;
+    const expected = 4;
+    //Act
+    const actual = subtract (x - y);
+    //Expect
+    expect.equal(actual, expected);
+});
+export function subtract(x, y) {
+    return x - y;
+}
 /* 
     Write a function that takes in two numbers
     and returns their difference (subtract)
