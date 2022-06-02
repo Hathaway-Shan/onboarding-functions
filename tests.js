@@ -39,7 +39,7 @@ test('subtracts two numbers', (expect) => {
     const y = 8;
     const expected = 4;
     //Act
-    const actual = subtract (x - y);
+    const actual = subtract (x, y);
     //Expect
     expect.equal(actual, expected);
 });
@@ -51,7 +51,7 @@ test('subtracts two numbers', (expect) => {
 
     Uses: Math operator
 */
-test('convertToSeconds', (expect) => {
+test('convert to seconds', (expect) => {
     //Arrange
     const expected = 600;
     //Act
@@ -67,7 +67,7 @@ test('convertToSeconds', (expect) => {
 
     Uses: Math operator(s)
 */
-test('triangleArea', (expect) => {
+test('get area of a triangle', (expect) => {
     //Arrange
     const base = 5;
     const height = 10;
@@ -85,9 +85,23 @@ test('triangleArea', (expect) => {
 
     Uses: Math operator(s)
 */
-test('lessGreater', (expect) => {
-    
-})
+test('sum greater or less than 100', (expect) => {
+    //Arrange
+    const trueNum1 = 25;
+    const trueNum2 = 13;
+    const falseNum1 = 88;
+    const falseNum2 = 60;
+    const expectedTrue = true;
+    const expectedFalse = false;
+    //Act
+    const actualTrue = numberSum(trueNum1, trueNum2);
+    const actualFalse = numberSum(falseNum1, falseNum2);
+    //Expect
+    expect.equal(actualTrue, expectedTrue);
+    expect.equals(expectedFalse, actualFalse);
+
+
+});
 /* 
     Write a function that takes in two 2 numbers
     and returns true if their sum is less than 100 or 
@@ -99,7 +113,10 @@ test('lessGreater', (expect) => {
 
     Uses: Comparison operator(s), if/else control flow
 */
-
+test('even or odd', (expect) => {
+    //Arrange
+    const 
+})
 /* 
     Write a function that takes a number and
     and returns 'even' if number is even, otherwise 'odd'.
