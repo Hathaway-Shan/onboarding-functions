@@ -1,6 +1,9 @@
 // IMPORT MODULES under test here:
 import {
     add,
+    subtract,
+    convertToSeconds,
+    triangleArea,
 } from './functions.js';
 
 const test = QUnit.test;
@@ -48,7 +51,7 @@ test('subtracts two numbers', (expect) => {
 
     Uses: Math operator
 */
-test('minutes into seconds', (expect) => {
+test('convertToSeconds', (expect) => {
     //Arrange
     const expected = 600;
     //Act
@@ -56,7 +59,6 @@ test('minutes into seconds', (expect) => {
     //Expect
     expect.equal(actual, expected);
 });
-
 /* 
     Write a function that takes in number of minutes
     and returns the number of seconds
@@ -65,7 +67,16 @@ test('minutes into seconds', (expect) => {
 
     Uses: Math operator(s)
 */
-
+test('triangleArea', (expect) => {
+    //Arrange
+    const base = 5;
+    const height = 10;
+    const expected = 25;
+    //Act
+    const actual = triangleArea(base, height);
+    //Expect
+    expect.equal(actual, expected);
+});
 /* 
     Write a function that takes in the base and height
     of a triangle and returns its area (google it)
@@ -74,7 +85,9 @@ test('minutes into seconds', (expect) => {
 
     Uses: Math operator(s)
 */
-
+test('lessGreater', (expect) => {
+    
+})
 /* 
     Write a function that takes in two 2 numbers
     and returns true if their sum is less than 100 or 

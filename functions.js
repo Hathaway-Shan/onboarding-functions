@@ -10,3 +10,6 @@ export function subtract(x, y) {
 export function convertToSeconds(x) {
     return x * 60;
 }
+export function triangleArea(base, height) {
+    return base * height / 2;
+}
